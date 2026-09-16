@@ -1,0 +1,285 @@
+      <header class="ova-screen__head" data-reveal>
+        <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
+        <h1 class="ova-screen__title">Identificación de peligros y evaluación del riesgo eléctrico</h1>
+      </header>
+
+      <!-- Situación de partida · cuadro de texto del DI previo a 2.1 -->
+      <div data-reveal style="margin-bottom:40px; padding:32px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-acento) 10%, var(--bg-surface)) 0%, var(--bg-surface) 60%); border:1px solid color-mix(in srgb, var(--c-acento) 30%, var(--border-c)); border-radius:var(--r-lg); position:relative; overflow:hidden;">
+        <h3 style="font-family:var(--font-mono); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--c-acento); margin:0 0 16px; display:flex; align-items:center; gap:10px;"><iconify-icon icon="mdi:comment-question-outline" style="font-size:1.1rem;"></iconify-icon> Situación de partida</h3>
+        <p style="margin:0; font-size:1.02rem; line-height:1.6;">Un equipo debe hacer una maniobra en un tablero de media tensión de una planta industrial. El líder de la tarea revisa la placa del tablero, confirma el nivel de tensión y, antes de autorizar el trabajo, pregunta si existe un estudio de energía incidente para ese punto específico. Nadie en el equipo sabe qué es eso ni dónde consultarlo.</p>
+        <p style="margin:18px 0 0; padding-top:18px; border-top:1px solid color-mix(in srgb, var(--c-acento) 25%, var(--border-c)); font-size:1.02rem; line-height:1.6;">Antes de seguir, piensa un momento: ¿por qué esa pregunta detiene la tarea, si el equipo ya cuenta con el equipo de protección personal certificado? Contar con elementos de protección personal no garantiza que estén dimensionados para la energía real de ese punto: eso depende de la capacidad de corriente de falla del lugar específico donde se trabaja, algo que solo revela el estudio de energía incidente. Sin conocer esa energía, no se puede saber si el EPP disponible realmente protege en ese punto.</p>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.1 · peligros ════ -->
+      <section class="ova-seccion" id="peligros" data-reveal>
+        <h2 class="ova-seccion__titulo">Qué peligros existen en el trabajo con electricidad</h2>
+        <p class="ova-seccion__lead">En el trabajo con electricidad encontramos varios peligros:</p>
+      </section>
+
+      <!-- Carrusel (así lo indica el DI) · cinco peligros, texto literal -->
+      <div class="ova-carrusel" data-reveal>
+        <div class="ova-carrusel__track-wrap">
+          <div class="ova-carrusel__track">
+            <div class="ova-carrusel__slide">
+              <iconify-icon icon="mdi:gesture-tap" style="font-size:2.4rem; color:var(--c-acento);"></iconify-icon>
+              <h4 style="margin-top:12px;">El contacto directo</h4>
+              <p style="color:var(--text-mut); font-size:.9rem;">El peligro más evidente es el contacto directo: tocar un conductor o una parte energizada sin protección adecuada.</p>
+            </div>
+            <div class="ova-carrusel__slide">
+              <iconify-icon icon="mdi:engine-outline" style="font-size:2.4rem; color:var(--c-acento);"></iconify-icon>
+              <h4 style="margin-top:12px;">El contacto indirecto</h4>
+              <p style="color:var(--text-mut); font-size:.9rem;">El contacto indirecto ocurre cuando una falla de aislamiento energiza una parte que normalmente no debería estarlo, como la carcasa de un motor o un gabinete metálico.</p>
+            </div>
+            <div class="ova-carrusel__slide">
+              <iconify-icon icon="mdi:flash" style="font-size:2.4rem; color:var(--c-acento);"></iconify-icon>
+              <h4 style="margin-top:12px;">El arco eléctrico</h4>
+              <p style="color:var(--text-mut); font-size:.9rem;">El arco eléctrico es otro peligro diferente: una descarga de energía a través del aire, generalmente durante una maniobra o una falla, que libera calor extremo, luz intensa y una onda de presión, sin que sea necesario tocar directamente ningún conductor. Esa onda de presión puede lanzar fragmentos de metal fundido a varios metros, con la fuerza de una pequeña explosión, sin que la persona haya llegado a tocar nada: por eso la distancia a la que se trabaja importa tanto como el guante que se lleva puesto.</p>
+            </div>
+            <div class="ova-carrusel__slide">
+              <iconify-icon icon="mdi:fire" style="font-size:2.4rem; color:var(--c-acento);"></iconify-icon>
+              <h4 style="margin-top:12px;">Riesgo de incendio</h4>
+              <p style="color:var(--text-mut); font-size:.9rem;">Puede originarse por sobrecarga, cortocircuito o falla de aislamiento.</p>
+            </div>
+            <div class="ova-carrusel__slide">
+              <iconify-icon icon="mdi:alert-octagram-outline" style="font-size:2.4rem; color:var(--c-acento);"></iconify-icon>
+              <h4 style="margin-top:12px;">Riesgo de explosión en instalaciones</h4>
+              <p style="color:var(--text-mut); font-size:.9rem;">El riesgo de explosión puede presentarse en instalaciones que combinan energía eléctrica con atmósferas inflamables o explosivas, como ciertos entornos industriales o de hidrocarburos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ova-carrusel__nav">
+          <div class="ova-carrusel__dots"></div>
+          <div class="ova-carrusel__arrows">
+            <button class="ova-carrusel__arrow" data-ova-carrusel-prev><iconify-icon icon="mdi:arrow-left"></iconify-icon></button>
+            <button class="ova-carrusel__arrow" data-ova-carrusel-next><iconify-icon icon="mdi:arrow-right"></iconify-icon></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón: Importante -->
+      <div class="ova-callout" style="margin-top:32px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:information-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Importante</span>
+          <p style="margin:8px 0 0;">Cada uno de estos peligros exige un control diferente, y ninguno se cubre automáticamente controlando solo el contacto directo.</p>
+        </div>
+      </div>
+
+      <p data-reveal style="margin-top:32px; font-size:1.02rem;">
+        Los peligros más comunes en trabajo con riesgo eléctrico se agrupan en unas pocas
+        categorías fáciles de recordar: el tipo de contacto (directo o indirecto), el arco
+        eléctrico, el incendio o la explosión, y las condiciones del entorno que pueden agravar
+        cualquiera de los anteriores, como la humedad o la presencia de materiales conductores,
+        cerca del punto de trabajo.
+      </p>
+
+      <!-- ════ Sección {{NUM}}.2 · nivel-riesgo ════ -->
+      <section class="ova-seccion" id="nivel-riesgo" data-reveal>
+        <h2 class="ova-seccion__titulo">Qué tan grave es el riesgo: niveles de tensión y categorías de riesgo de arco</h2>
+        <p class="ova-seccion__lead">El nivel de tensión de una instalación determina la gravedad potencial de un evento eléctrico en dicho punto. Aunque las instalaciones de baja tensión son las más comunes en la operación diaria, esto no las hace inofensivas; de hecho, la alta frecuencia de sus intervenciones concentra la mayor parte de los accidentes laborales. Por el contrario, los sistemas de media y alta tensión registran un menor número de intervenciones, pero cualquier falla en ellos libera una cantidad de energía considerablemente mayor y destructiva.</p>
+      </section>
+
+      <p data-reveal>Además del nivel de tensión, existe:</p>
+
+      <!-- El DI dice "Botón: Carrusel" con dos ítems; con 2 el catálogo pide dos columnas -->
+      <div data-reveal style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+        <div style="padding:28px; background:var(--bg-surface); border:1px solid var(--border-c); border-left:4px solid var(--c-acento); border-radius:var(--r-md);">
+          <div style="width:40px; height:40px; border-radius:10px; background:color-mix(in srgb, var(--c-acento) 14%, transparent); color:var(--c-acento); display:grid; place-items:center; margin-bottom:14px;"><iconify-icon icon="mdi:speedometer" style="font-size:1.4rem;"></iconify-icon></div>
+          <h4 style="margin:0 0 10px; font-size:1.05rem;"><strong>La categoría de riesgo de arco eléctrico</strong></h4>
+          <p style="margin:0;">Que clasifica qué tan grave sería un arco en un punto específico de la instalación, considerando la corriente de falla disponible y el tiempo que tardaría en despejarse esa falla. A mayor categoría de riesgo de arco, mayor es el nivel de protección personal exigido para trabajar en ese punto, incluso si el nivel de tensión nominal parece moderado.</p>
+        </div>
+        <div style="padding:28px; background:var(--bg-surface); border:1px solid var(--border-c); border-left:4px solid var(--c-info); border-radius:var(--r-md);">
+          <!-- La cifra del DI como stat (§4.6): sale del párrafo que sigue -->
+          <div style="margin-bottom:14px;">
+            <div style="font-family:var(--font-mono); font-size:2rem; font-weight:700; color:var(--c-info); line-height:1;">1,2 cal/cm²</div>
+            <div style="font-size:.78rem; color:var(--text-mut); margin-top:6px; letter-spacing:.06em; text-transform:uppercase;">energía incidente</div>
+          </div>
+          <h4 style="margin:0 0 10px; font-size:1.05rem;"><strong>Umbral específico</strong></h4>
+          <p style="margin:0;">Existe además un umbral específico, 1,2 cal/cm² de energía incidente, que define la frontera de protección contra arco: la distancia calculada a partir de la energía incidente, dentro de la cual cualquier persona debe usar la ropa resistente al arco correspondiente a la categoría de ese punto (en el Tema 3 vas a ver cómo se traduce ese cálculo en el EPP concreto que debes usar). Fuera de esa frontera el riesgo térmico del arco deja de exigir ropa especial, aunque el riesgo de choque eléctrico por contacto directo sigue vigente, según la frontera de aproximación restringida, que es una distancia diferente.</p>
+        </div>
+      </div>
+
+      <!-- Botón: Importante -->
+      <div class="ova-callout" style="margin-top:24px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:information-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Importante</span>
+          <p style="margin:8px 0 0;">
+            Dos tableros con el mismo nivel de tensión nominal pueden tener categorías de riesgo
+            de arco diferentes, según la capacidad de corriente de falla del circuito que los
+            alimenta. Por eso no basta con conocer la tensión de una instalación para decidir el
+            EPP adecuado.
+          </p>
+        </div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.3 · energia-incidente ════ -->
+      <section class="ova-seccion" id="energia-incidente" data-reveal>
+        <h2 class="ova-seccion__titulo">La energía incidente: por qué se calcula antes de acercarse a un tablero</h2>
+        <p class="ova-seccion__lead">La energía incidente es la cantidad de energía térmica que llegaría a la piel de una persona ubicada a una distancia de trabajo determinada, si ocurriera un arco eléctrico en ese punto. Se expresa en unidades de energía por área, y su cálculo considera el nivel de tensión, la corriente de falla disponible y el tiempo que tardaría el sistema de protección en despejar la falla.</p>
+      </section>
+
+      <p data-reveal>
+        Este cálculo determina directamente qué nivel de protección personal es realmente
+        necesario para trabajar en ese punto específico, y a qué distancia mínima debe
+        mantenerse una persona sin protección adicional. Dos instalaciones de la misma tensión
+        nominal pueden requerir niveles de protección distintos si su energía incidente
+        calculada es diferente.
+      </p>
+
+      <!-- Botón: Ten en cuenta -->
+      <div class="ova-callout" style="margin-top:8px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:lightbulb-on"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Ten en cuenta</span>
+          <p style="margin:8px 0 0;">
+            Para quien diseña el procedimiento de la empresa, el cálculo de energía incidente
+            sigue metodologías técnicas como la de IEEE 1584, y su resultado se documenta y se
+            actualiza cuando cambian las condiciones del sistema eléctrico. Si eres quien va a
+            intervenir, lo que necesitas es confiar en que ese cálculo existe, está actualizado,
+            y que el EPP que te entregan corresponde a la categoría de riesgo de ese punto
+            específico, no a un estándar genérico usado en toda la planta.
+          </p>
+        </div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.4 · entorno ════ -->
+      <section class="ova-seccion" id="entorno" data-reveal>
+        <h2 class="ova-seccion__titulo">Otros peligros del entorno que agravan el riesgo eléctrico</h2>
+        <p class="ova-seccion__lead">El riesgo eléctrico casi nunca aparece aislado de las condiciones del entorno. La humedad reduce la resistencia eléctrica del cuerpo humano y de las superficies cercanas, lo que aumenta la gravedad de un contacto eléctrico en condiciones de lluvia, piso mojado o alta humedad ambiental. Los objetos metálicos, las herramientas sin aislamiento y las superficies conductoras cercanas al punto de trabajo también amplían el área donde un contacto accidental podría ocurrir.</p>
+      </section>
+
+      <p data-reveal>
+        Otro peligro frecuente, evidenciado en tareas sobre redes eléctricas al aire libre, es
+        la vegetación cercana a las líneas:
+      </p>
+
+      <!-- Figura del DI (Imagen 07) · vegetación y basura cerca de las líneas -->
+      <figure class="ova-figura ova-figura--plana" data-reveal>
+        <img src="assets/img/curso/figura-07-vegetacion-entorno.webp" alt="Ramas de árboles o basura acumulada cerca de un poste o una línea energizada pueden generar un camino conductor inesperado, o dificultar la maniobra segura del personal. Estos elementos aumentan el riesgo de contacto eléctrico accidental y limitan el espacio necesario para trabajar con seguridad. Por eso, antes de iniciar cualquier tarea eléctrica en exteriores, se revisa y se señaliza el área alrededor del punto de trabajo, no solo el punto mismo. La revisión y señalización del área completa es parte esencial de una intervención eléctrica segura" />
+      </figure>
+
+      <!-- Botón: Ten en cuenta -->
+      <div class="ova-callout" style="margin-top:32px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:lightbulb-on"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Ten en cuenta</span>
+          <p style="margin:8px 0 0;">
+            Cuando una tarea con riesgo eléctrico se combina con trabajo en alturas, como una
+            intervención en una torre o un poste, los controles de ambos riesgos deben aplicarse
+            de forma simultánea, sin que uno reemplace al otro: el sistema de protección contra
+            caídas no sustituye los elementos de protección personal certificados para riesgo
+            eléctrico, y estos tampoco sustituyen aquel sistema.
+          </p>
+        </div>
+      </div>
+
+      <!-- Botón: Error frecuente -->
+      <div class="ova-callout ova-callout--danger" style="margin-top:14px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:close-octagon"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Error frecuente</span>
+          <p style="margin:8px 0 0;">
+            Determinar el nivel de riesgo de una tarea únicamente a partir del nivel de tensión
+            nominal de la instalación, sin verificar si existe un estudio de energía incidente
+            vigente para ese punto específico.
+          </p>
+        </div>
+      </div>
+
+      <!-- Comparativo · Ejemplo contextualizado / Contraejemplo -->
+      <h3 style="margin:48px 0 16px; display:flex; align-items:center; gap:10px;" data-reveal>
+        <iconify-icon icon="mdi:scale-balance" style="color:var(--c-acento); font-size:1.6rem;"></iconify-icon>
+        Comparativo
+      </h3>
+
+      <div class="ova-vs" data-reveal>
+        <div class="ova-vs__card">
+          <span class="ova-vs__card-tag" style="background:color-mix(in srgb, var(--success) 14%, transparent); color:var(--success);">✓ Ejemplo contextualizado</span>
+          <h3>Ejemplo contextualizado</h3>
+          <p>
+            El equipo de trabajo que, antes de intervenir un tablero de media tensión, consulta
+            el estudio de energía incidente vigente para ese punto específico y confirma su
+            categoría de riesgo de arco antes de continuar con la tarea.
+          </p>
+        </div>
+        <div class="ova-vs__divider">VS</div>
+        <div class="ova-vs__card ova-vs__card--alt">
+          <span class="ova-vs__card-tag" style="background:color-mix(in srgb, var(--danger) 14%, transparent); color:var(--danger);">✗ Contraejemplo</span>
+          <h3>Contraejemplo</h3>
+          <p>
+            El equipo de trabajo que asume que, como ya cuenta con elementos de protección
+            personal certificados, la instalación se encuentra evaluada y no requiere más
+            verificación, sin consultar la categoría de riesgo de arco de ese punto específico.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mirada experta · cuadro de texto del DI (mismo tratamiento que Situación de partida) -->
+      <div data-reveal style="margin-top:32px; padding:32px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-info) 10%, var(--bg-surface)) 0%, var(--bg-surface) 60%); border:1px solid color-mix(in srgb, var(--c-info) 30%, var(--border-c)); border-radius:var(--r-lg); position:relative; overflow:hidden;">
+        <h3 style="font-family:var(--font-mono); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--c-info); margin:0 0 16px; display:flex; align-items:center; gap:10px;"><iconify-icon icon="mdi:account-search-outline" style="font-size:1.1rem;"></iconify-icon> Mirada experta</h3>
+        <p style="margin:0; font-size:1.02rem; line-height:1.6;">El supervisor de la tarea no decide el nivel de protección necesario mirando únicamente la etiqueta de tensión nominal del tablero: revisa si existe un estudio de energía incidente vigente para ese punto específico, y si no existe, lo señala como un hallazgo prioritario antes de autorizar cualquier intervención. Su primera pregunta frente a una tarea nueva nunca es "qué EPP tenemos disponible", sino "qué energía incidente tiene este punto exacto de la instalación".</p>
+        <p style="margin:14px 0 0; font-size:1.02rem; line-height:1.6;">Ejemplo de cómo piensa un experto: al evaluar una intervención en dos tableros de la misma tensión nominal pero alimentados por diferentes transformadores, no asume que ambos representan el mismo nivel de riesgo; revisa la capacidad de corriente de falla de cada uno, porque sabe que un transformador de mayor capacidad puede generar una energía incidente mucho más alta en el segundo tablero, aunque la tensión nominal sea idéntica.</p>
+      </div>
+
+      <!-- Botón: Importante -->
+      <div class="ova-callout" style="margin-top:14px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:information-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Importante</span>
+          <p style="margin:8px 0 0;">
+            La tensión nominal de una instalación no determina por sí sola su nivel de riesgo.
+            La categoría de riesgo de arco y la energía incidente calculada para ese punto
+            específico son las que definen el riesgo real, la base con la que en el Tema 3 vas
+            a seleccionar el EPP adecuado.
+          </p>
+        </div>
+      </div>
+
+      <!-- Comparativo · Buena práctica / Mala práctica -->
+      <h3 style="margin:48px 0 16px; display:flex; align-items:center; gap:10px;" data-reveal>
+        <iconify-icon icon="mdi:scale-balance" style="color:var(--c-acento); font-size:1.6rem;"></iconify-icon>
+        Comparativo
+      </h3>
+
+      <div data-reveal style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:16px;">
+        <div style="position:relative; padding:28px; background:linear-gradient(135deg, color-mix(in srgb, var(--success) 8%, var(--bg-surface)) 0%, var(--bg-surface) 100%); border:1px solid color-mix(in srgb, var(--success) 35%, var(--border-c)); border-radius:var(--r-md);">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+            <div style="width:36px; height:36px; border-radius:10px; background:var(--success); color:white; display:grid; place-items:center;">
+              <iconify-icon icon="mdi:check-bold" style="font-size:1.2rem;"></iconify-icon>
+            </div>
+            <h3 style="margin:0; font-size:1.2rem; color:var(--success);">Buena práctica</h3>
+          </div>
+          <p style="margin:0;">
+            Consultar el estudio de energía incidente vigente antes de cada intervención en
+            tableros de media o alta tensión, y verificar que la fecha del estudio corresponda a
+            la configuración actual del sistema.
+          </p>
+        </div>
+        <div style="position:relative; padding:28px; background:linear-gradient(135deg, color-mix(in srgb, var(--danger) 8%, var(--bg-surface)) 0%, var(--bg-surface) 100%); border:1px solid color-mix(in srgb, var(--danger) 30%, var(--border-c)); border-radius:var(--r-md);">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+            <div style="width:36px; height:36px; border-radius:10px; background:var(--danger); color:white; display:grid; place-items:center;">
+              <iconify-icon icon="mdi:close-thick" style="font-size:1.2rem;"></iconify-icon>
+            </div>
+            <h3 style="margin:0; font-size:1.2rem; color:var(--danger);">Mala práctica</h3>
+          </div>
+          <p style="margin:0;">
+            Asumir el mismo nivel de riesgo en todos los tableros de la planta porque tienen la
+            misma tensión nominal, sin verificar la categoría de riesgo de arco de cada punto.
+          </p>
+        </div>
+      </div>
+
+      <!-- Botón: Ponte a prueba -->
+      <div class="ova-callout ova-callout--success" style="margin-top:24px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:pencil-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Ponte a prueba</span>
+          <p style="margin:8px 0 0;">
+            Piensa, con el caso del tablero de media tensión, qué información adicional
+            necesitarías antes de autorizar la tarea, aunque el equipo ya cuente con elementos
+            de protección personal certificados. No necesitas escribir ni entregar tu respuesta:
+            esta reflexión te prepara para reconocer esa información en la inmersión.
+          </p>
+        </div>
+      </div>

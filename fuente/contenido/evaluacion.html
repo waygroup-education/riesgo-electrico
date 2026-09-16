@@ -1,0 +1,258 @@
+      <header class="ova-screen__head" data-reveal>
+        <div class="ova-screen__eyebrow">Evaluación</div>
+        <h1 class="ova-screen__title">Evaluación</h1>
+      </header>
+
+      <!-- Evaluación estándar Waygroup: sin cabecera superior; el tema va dentro de cada actividad;
+           la franja inferior lleva anterior · progreso · contador · siguiente.
+           Caso, enunciado, opciones, respuesta correcta y retroalimentación: literales de
+           insumos/Banco_preguntas.docx. Los diez reactivos elegidos y por qué: insumos/MAPA-EVALUACION.md.
+           `data-correct` lleva la Justificación del banco; `data-wrong`, su Retroalimentación. -->
+      <div class="ova-evalquiz" data-ova-evalquiz data-label-item="Actividad" data-label-items="actividades" data-reveal>
+
+        <div class="ova-evalquiz__slide is-active" data-slide="intro">
+          <div class="ova-eval__cuerpo">
+            <p class="ova-eval__lead">Diez actividades sobre lo que trabajaste en el curso: el marco normativo y los roles,
+              la evaluación del riesgo y la energía incidente, la verificación del equipo de protección, y la consignación
+              con las cinco reglas de oro. Sin nota ni tiempo límite; puedes repetirla las veces que quieras.</p>
+            <div class="ova-eval__datos">
+              <div class="ova-eval__dato"><span class="v">10</span><span class="l">actividades</span></div>
+              <div class="ova-eval__dato"><span class="v">3</span><span class="l">tipos: selección única, emparejamiento y ordenar</span></div>
+              <div class="ova-eval__dato"><span class="v"><iconify-icon icon="mdi:message-reply-text-outline"></iconify-icon></span><span class="l">retroalimentación en cada respuesta, aciertes o no</span></div>
+            </div>
+            <button class="ova-evalquiz__btn ova-evalquiz__btn--primary" data-evalquiz-go="1">Comenzar <iconify-icon icon="mdi:arrow-right"></iconify-icon></button>
+            <p class="ova-eval__ayuda">También puedes moverte con las flechas del teclado.</p>
+          </div>
+        </div>
+
+        <!-- ============== ACTIVIDAD 1 · banco P01 · Tema 1 ============== -->
+        <div class="ova-evalquiz__slide" data-slide="su-1" data-section="Selección única" data-section-color="acento">
+          <div class="ova-eval__cuerpo">
+            <span class="ova-eval__tema">Tema 1 — Definición, marco normativo y roles en riesgo eléctrico</span>
+            <div class="ova-quiz">
+              <p class="ova-eval__contexto">Una empresa de mantenimiento industrial va a intervenir un tablero de distribución. El coordinador de SST revisa qué reglamento técnico aplica para definir los requisitos de seguridad de esa instalación eléctrica.</p>
+              <h3 class="ova-quiz__question">¿Qué norma debe aplicar principalmente?</h3>
+              <div class="ova-quiz__opts">
+                <button class="ova-quiz__opt" data-correct="true"><strong>A.</strong> El RETIE, actualizado mediante la Resolución 40117 de 2024 del Ministerio de Minas y Energía.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>B.</strong> La Resolución 90708 de 2013, que sigue siendo la única vigente para instalaciones eléctricas.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>C.</strong> Ninguna norma específica; basta con el Decreto 1072 de 2015.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>D.</strong> La NTC 2050 exclusivamente, sin necesidad de consultar el RETIE.</button>
+              </div>
+              <div class="ova-quiz__feedback"
+                   data-correct="El Reglamento Técnico de Instalaciones Eléctricas (RETIE) fue actualizado mediante la Resolución 40117 de 2024 del Ministerio de Minas y Energía, que reemplazó a la Resolución 90708 de 2013. Es la norma técnica específica que define los requisitos mínimos de seguridad para instalaciones eléctricas en Colombia."
+                   data-wrong="Si encuentras referencias a la Resolución 90708 de 2013 en un manual antiguo, recuerda que fue reemplazada por la Resolución 40117 de 2024."></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============== ACTIVIDAD 2 · banco P09 · Tema 1 ============== -->
+        <div class="ova-evalquiz__slide" data-slide="emp-1" data-section="Emparejamiento" data-section-color="info">
+          <div class="ova-eval__cuerpo">
+            <span class="ova-eval__tema">Tema 1 — Definición, marco normativo y roles en riesgo eléctrico</span>
+            <p class="ova-eval__contexto">Un coordinador de SST explica a un grupo nuevo qué rol corresponde a cada situación descrita durante la inducción al procedimiento de riesgo eléctrico.</p>
+            <h3 class="ova-quiz__question">Relacione cada situación con el rol que le corresponde.</h3>
+            <p class="ova-eval__instruccion">
+              Toca una situación de la columna izquierda y luego el rol que le corresponde en la derecha.
+            </p>
+            <div class="ova-empar">
+              <div class="ova-empar__col">
+                <div class="ova-empar__col-title">Situación</div>
+                <button class="ova-empar__item" data-ova-match="re1-1">Confirma formalmente que el circuito quedó fuera de servicio.</button>
+                <button class="ova-empar__item" data-ova-match="re1-2">Ejecuta la tarea sobre el punto de trabajo desenergizado.</button>
+                <button class="ova-empar__item" data-ova-match="re1-3">Permanece atento durante la intervención y activa el protocolo de emergencia si algo sale mal.</button>
+                <button class="ova-empar__item" data-ova-match="re1-4">Verifica que el equipo de protección esté disponible y puede detener el trabajo.</button>
+              </div>
+              <div class="ova-empar__col">
+                <div class="ova-empar__col-title">Rol</div>
+                <button class="ova-empar__item" data-ova-match="re1-2">Trabajador calificado</button>
+                <button class="ova-empar__item" data-ova-match="re1-4">Supervisor de la tarea</button>
+                <button class="ova-empar__item" data-ova-match="re1-1">Centro de control / operador de red</button>
+                <button class="ova-empar__item" data-ova-match="re1-3">Observador o compañero de trabajo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============== ACTIVIDAD 3 · banco P11 · Tema 2 ============== -->
+        <div class="ova-evalquiz__slide" data-slide="su-2" data-section="Selección única" data-section-color="acento">
+          <div class="ova-eval__cuerpo">
+            <span class="ova-eval__tema">Tema 2 — Identificación de peligros y evaluación del riesgo eléctrico</span>
+            <div class="ova-quiz">
+              <p class="ova-eval__contexto">Un trabajador va a abrir un tablero de media tensión para una maniobra. Cuenta con guantes dieléctricos certificados, pero nadie del equipo verificó si existe un estudio de energía incidente para ese tablero específico.</p>
+              <h3 class="ova-quiz__question">¿Qué análisis es correcto sobre esta situación?</h3>
+              <div class="ova-quiz__opts">
+                <button class="ova-quiz__opt" data-correct="false"><strong>A.</strong> Los guantes dieléctricos ya cubren cualquier peligro eléctrico presente, incluido el arco eléctrico.</button>
+                <button class="ova-quiz__opt" data-correct="true"><strong>B.</strong> Los guantes dieléctricos protegen frente al contacto directo, pero no necesariamente frente a la energía liberada por un arco eléctrico, que depende de la corriente de falla de ese punto específico.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>C.</strong> El estudio de energía incidente solo es necesario en instalaciones de baja tensión.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>D.</strong> No es necesario ningún estudio si el trabajador tiene experiencia previa con ese tablero.</button>
+              </div>
+              <div class="ova-quiz__feedback"
+                   data-correct="Los guantes dieléctricos protegen frente al contacto directo con un conductor energizado, pero no garantizan protección frente a la energía liberada por un arco eléctrico, que depende de la capacidad de corriente de falla del punto específico donde se trabaja. Sin el estudio de energía incidente, no se puede confirmar que el EPP disponible sea suficiente."
+                   data-wrong="Contar con guantes dieléctricos no equivale a tener resuelta la protección frente a un arco eléctrico en ese punto específico."></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============== ACTIVIDAD 4 · banco P16 · Tema 2 ============== -->
+        <div class="ova-evalquiz__slide" data-slide="su-3" data-section="Selección única" data-section-color="acento">
+          <div class="ova-eval__cuerpo">
+            <span class="ova-eval__tema">Tema 2 — Identificación de peligros y evaluación del riesgo eléctrico</span>
+            <div class="ova-quiz">
+              <p class="ova-eval__contexto">Un equipo debe intervenir un poste de distribución un día de lluvia intensa, con el piso alrededor completamente mojado.</p>
+              <h3 class="ova-quiz__question">¿Qué debe aplicarse frente a esta condición del entorno?</h3>
+              <div class="ova-quiz__opts">
+                <button class="ova-quiz__opt" data-correct="false"><strong>A.</strong> Continuar normalmente, ya que la humedad no afecta el riesgo eléctrico si se usan guantes dieléctricos.</button>
+                <button class="ova-quiz__opt" data-correct="true"><strong>B.</strong> Reconocer que la humedad reduce la resistencia eléctrica del cuerpo y del entorno, lo que aumenta la gravedad de cualquier contacto, y evaluar si la tarea debe posponerse hasta que mejoren las condiciones.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>C.</strong> Continuar la tarea usando únicamente calzado de caucho, sin ninguna otra consideración.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>D.</strong> Suspender la tarea solo si además hay tormenta eléctrica visible.</button>
+              </div>
+              <div class="ova-quiz__feedback"
+                   data-correct="La humedad reduce la resistencia eléctrica del cuerpo humano y de las superficies cercanas, lo que aumenta la gravedad de un contacto eléctrico. Ante lluvia intensa y piso mojado, debe evaluarse si la tarea puede posponerse hasta que las condiciones mejoren, no continuar asumiendo que el EPP habitual compensa el riesgo adicional."
+                   data-wrong="La humedad significativa es una condición del entorno que puede exigir posponer una tarea con riesgo eléctrico, no un detalle menor."></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============== ACTIVIDAD 5 · banco P17 · Tema 2 ============== -->
+        <div class="ova-evalquiz__slide" data-slide="ord-1" data-section="Ordenar" data-section-color="success">
+          <div class="ova-eval__cuerpo">
+            <span class="ova-eval__tema">Tema 2 — Identificación de peligros y evaluación del riesgo eléctrico</span>
+            <p class="ova-eval__contexto">Un equipo debe seguir la secuencia técnica correcta para evaluar qué tan grave es el riesgo eléctrico de una tarea antes de definir el EPP necesario.</p>
+            <h3 class="ova-quiz__question">Ordene de primero a último los siguientes pasos.</h3>
+            <p class="ova-eval__instruccion">
+              Arrastra los elementos hasta dejarlos en el orden correcto y pulsa "Verificar orden".
+            </p>
+            <ul class="ova-orden">
+              <li class="ova-orden__item" data-ova-order="1"><span class="ova-orden__num">1</span> Identificar el nivel de tensión de la instalación.</li>
+              <li class="ova-orden__item" data-ova-order="3"><span class="ova-orden__num">2</span> Consultar o calcular la energía incidente del punto específico de trabajo.</li>
+              <li class="ova-orden__item" data-ova-order="2"><span class="ova-orden__num">3</span> Identificar el tipo de contacto posible (directo o indirecto) y otros peligros del entorno.</li>
+              <li class="ova-orden__item" data-ova-order="4"><span class="ova-orden__num">4</span> Seleccionar el EPP y las herramientas certificadas según la categoría de riesgo de arco resultante.</li>
+            </ul>
+            <button class="ova-btn ova-btn--primary" data-ova-orden-check style="margin-top:14px;">
+              <iconify-icon icon="mdi:check-bold"></iconify-icon> Verificar orden
+            </button>
+          </div>
+        </div>
+
+        <!-- ============== ACTIVIDAD 6 · banco P22 · Tema 3 ============== -->
+        <div class="ova-evalquiz__slide" data-slide="su-4" data-section="Selección única" data-section-color="acento">
+          <div class="ova-eval__cuerpo">
+            <span class="ova-eval__tema">Tema 3 — Elementos de protección y herramientas para riesgo eléctrico</span>
+            <div class="ova-quiz">
+              <p class="ova-eval__contexto">Un trabajador debe intervenir un tablero donde la categoría de riesgo de arco calculada exige ropa antiarco. El trabajador usa su ropa de trabajo habitual, que es resistente y de buena calidad, pero no está certificada contra arco eléctrico.</p>
+              <h3 class="ova-quiz__question">¿Qué debe aplicarse antes de iniciar la tarea?</h3>
+              <div class="ova-quiz__opts">
+                <button class="ova-quiz__opt" data-correct="false"><strong>A.</strong> Iniciar la tarea, ya que la ropa es resistente y de buena calidad.</button>
+                <button class="ova-quiz__opt" data-correct="true"><strong>B.</strong> Suspender la tarea hasta contar con ropa certificada contra arco eléctrico, porque la resistencia general de una prenda no equivale a la clasificación específica frente a la energía incidente calculada.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>C.</strong> Iniciar la tarea cubriéndose con dos capas de ropa habitual.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>D.</strong> Iniciar la tarea si el trabajador se aleja unos pasos adicionales del tablero.</button>
+              </div>
+              <div class="ova-quiz__feedback"
+                   data-correct="La ropa antiarco está fabricada con materiales resistentes a la llama y clasificada según la energía incidente que puede soportar sin transferir calor peligroso a la piel. Una prenda de trabajo resistente, aunque sea de buena calidad, no ofrece esta protección específica si no está certificada para ese fin."
+                   data-wrong="La resistencia general de una prenda de trabajo no sustituye la certificación específica contra arco eléctrico."></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============== ACTIVIDAD 7 · banco P23 · Tema 3 ============== -->
+        <div class="ova-evalquiz__slide" data-slide="su-5" data-section="Selección única" data-section-color="acento">
+          <div class="ova-eval__cuerpo">
+            <span class="ova-eval__tema">Tema 3 — Elementos de protección y herramientas para riesgo eléctrico</span>
+            <div class="ova-quiz">
+              <p class="ova-eval__contexto">Antes de una maniobra, un trabajador toma el verificador de ausencia de tensión y lo usa directamente sobre el circuito de trabajo, sin haberlo probado antes en ninguna fuente conocida.</p>
+              <h3 class="ova-quiz__question">¿Qué falta por verificar antes de confiar en el instrumento?</h3>
+              <div class="ova-quiz__opts">
+                <button class="ova-quiz__opt" data-correct="false"><strong>A.</strong> Nada; si el instrumento enciende, es suficiente para confiar en su lectura.</button>
+                <button class="ova-quiz__opt" data-correct="true"><strong>B.</strong> Falta probar el verificador en una fuente de tensión conocida, antes y después de usarlo sobre el circuito de trabajo, para confirmar que funciona correctamente.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>C.</strong> Solo falta revisar el color de la carcasa del instrumento.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>D.</strong> Falta únicamente confirmar la marca del fabricante.</button>
+              </div>
+              <div class="ova-quiz__feedback"
+                   data-correct="El verificador de ausencia de tensión debe probarse en una fuente conocida antes y después de usarlo sobre el circuito de trabajo. Que el instrumento encienda no confirma que esté detectando tensión correctamente; un verificador que no se prueba puede dar una falsa indicación de ausencia de tensión."
+                   data-wrong="Encender el verificador no es lo mismo que confirmar que funciona; siempre pruébelo en una fuente conocida antes de confiar en su lectura."></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============== ACTIVIDAD 8 · banco P36 · Tema 4 ============== -->
+        <div class="ova-evalquiz__slide" data-slide="ord-2" data-section="Ordenar" data-section-color="success">
+          <div class="ova-eval__cuerpo">
+            <span class="ova-eval__tema">Tema 4 — Procedimiento de trabajo seguro: consignación y las cinco reglas de oro</span>
+            <p class="ova-eval__contexto">Un equipo debe aplicar las cinco reglas de oro en el orden técnico correcto sobre un circuito ya consignado.</p>
+            <h3 class="ova-quiz__question">Ordene de primero a último las siguientes acciones.</h3>
+            <p class="ova-eval__instruccion">
+              Arrastra los elementos hasta dejarlos en el orden correcto y pulsa "Verificar orden".
+            </p>
+            <ul class="ova-orden">
+              <li class="ova-orden__item" data-ova-order="4"><span class="ova-orden__num">1</span> Poner a tierra y en cortocircuito el punto de trabajo.</li>
+              <li class="ova-orden__item" data-ova-order="1"><span class="ova-orden__num">2</span> Desconectar de forma efectiva todas las fuentes de tensión del punto de trabajo.</li>
+              <li class="ova-orden__item" data-ova-order="5"><span class="ova-orden__num">3</span> Delimitar y señalizar la zona de trabajo.</li>
+              <li class="ova-orden__item" data-ova-order="3"><span class="ova-orden__num">4</span> Verificar la ausencia de tensión con el instrumento ya probado.</li>
+              <li class="ova-orden__item" data-ova-order="2"><span class="ova-orden__num">5</span> Bloquear y señalizar los dispositivos de corte para evitar una reconexión.</li>
+            </ul>
+            <button class="ova-btn ova-btn--primary" data-ova-orden-check style="margin-top:14px;">
+              <iconify-icon icon="mdi:check-bold"></iconify-icon> Verificar orden
+            </button>
+          </div>
+        </div>
+
+        <!-- ============== ACTIVIDAD 9 · banco P33 · Tema 4 ============== -->
+        <div class="ova-evalquiz__slide" data-slide="su-6" data-section="Selección única" data-section-color="acento">
+          <div class="ova-eval__cuerpo">
+            <span class="ova-eval__tema">Tema 4 — Procedimiento de trabajo seguro: consignación y las cinco reglas de oro</span>
+            <div class="ova-quiz">
+              <p class="ova-eval__contexto">Durante una maniobra, un trabajador sufre un contacto eléctrico y queda adherido al conductor por la contracción muscular. Un compañero cercano intenta separarlo tomándolo directamente de las manos.</p>
+              <h3 class="ova-quiz__question">¿Qué acción es correcta frente a esta emergencia?</h3>
+              <div class="ova-quiz__opts">
+                <button class="ova-quiz__opt" data-correct="false"><strong>A.</strong> Es correcto, porque cada segundo cuenta y hay que actuar de inmediato sin importar el método.</button>
+                <button class="ova-quiz__opt" data-correct="true"><strong>B.</strong> Es incorrecto; tocar directamente a la persona puede convertir al compañero en una segunda víctima si el circuito sigue energizado. Debe cortarse la fuente de energía o usarse un elemento no conductor para separarla.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>C.</strong> Es correcto si el compañero se pone guantes de tela antes de tocarlo.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>D.</strong> Es correcto solo si el contacto ocurrió en baja tensión.</button>
+              </div>
+              <div class="ova-quiz__feedback"
+                   data-correct="Tocar directamente a una persona en contacto con una fuente eléctrica energizada puede convertir a quien intenta ayudar en una segunda víctima. La acción correcta es cortar la fuente de energía si es posible hacerlo de forma segura y rápida, o alejar a la persona usando un elemento no conductor, nunca con las manos desnudas ni con guantes de tela común."
+                   data-wrong="Ante un contacto eléctrico, nunca toque directamente a la víctima; corte la energía o use un elemento no conductor certificado."></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============== ACTIVIDAD 10 · banco P40 · Tema 4 ============== -->
+        <div class="ova-evalquiz__slide" data-slide="su-7" data-section="Selección única" data-section-color="acento">
+          <div class="ova-eval__cuerpo">
+            <span class="ova-eval__tema">Tema 4 — Procedimiento de trabajo seguro: consignación y las cinco reglas de oro</span>
+            <div class="ova-quiz">
+              <p class="ova-eval__contexto">Un coordinador afirma: "Una vez que el equipo termina la tarea y se retira del sitio, el procedimiento de riesgo eléctrico termina ahí; no hace falta ningún cierre formal con el centro de control".</p>
+              <h3 class="ova-quiz__question">¿Qué corrección técnica es pertinente frente a esta afirmación?</h3>
+              <div class="ova-quiz__opts">
+                <button class="ova-quiz__opt" data-correct="false"><strong>A.</strong> Ninguna; retirarse del sitio es suficiente para dar por terminado el procedimiento.</button>
+                <button class="ova-quiz__opt" data-correct="true"><strong>B.</strong> Explicar que debe existir un cierre formal con el centro de control confirmando que la intervención terminó y que el circuito puede reenergizarse, para evitar que otra persona lo reconecte creyendo que sigue en mantenimiento o que quede fuera de servicio sin necesidad.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>C.</strong> Explicar que el cierre formal solo aplica en instalaciones de alta tensión.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>D.</strong> Explicar que el cierre formal es responsabilidad exclusiva del trabajador calificado, sin participación del centro de control.</button>
+              </div>
+              <div class="ova-quiz__feedback"
+                   data-correct="El procedimiento de consignación no termina cuando el equipo se retira del sitio: debe cerrarse formalmente con el centro de control, confirmando que la intervención finalizó y que el circuito puede reenergizarse de forma segura. Sin este cierre, existe el riesgo de que alguien reconecte el circuito sin saber que aún hay condiciones pendientes, o que quede fuera de servicio sin necesidad."
+                   data-wrong="La consignación se abre y se cierra formalmente con el centro de control; retirarse del sitio no equivale a cerrar el procedimiento."></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ova-evalquiz__slide" data-slide="cierre">
+          <div class="ova-eval__cuerpo">
+            <h2>Evaluación completada</h2>
+            <p style="max-width:60ch;">Repasar las retroalimentaciones vale tanto como acertar: cada una explica
+              por qué una respuesta es la indicada y las otras no. Puedes volver al glosario o repetir la evaluación.</p>
+            <button class="ova-evalquiz__btn" data-evalquiz-restart style="margin-top:22px;">
+              <iconify-icon icon="mdi:refresh"></iconify-icon> Volver a intentarlo
+            </button>
+          </div>
+        </div>
+
+        <div class="ova-evalquiz__nav" data-evalquiz-nav>
+          <button class="ova-evalquiz__btn ova-evalquiz__btn--prev" data-evalquiz-prev aria-label="Actividad anterior" title="Anterior"><iconify-icon icon="mdi:arrow-left"></iconify-icon></button>
+          <div class="ova-evalquiz__progress-bar">
+            <div class="ova-evalquiz__progress-fill" data-evalquiz-progress></div>
+          </div>
+          <span class="ova-evalquiz__counter" data-evalquiz-counter></span>
+          <button class="ova-evalquiz__btn ova-evalquiz__btn--primary" data-evalquiz-next>Siguiente <iconify-icon icon="mdi:arrow-right"></iconify-icon></button>
+        </div>
+      </div>

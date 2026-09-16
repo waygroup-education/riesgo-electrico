@@ -1,0 +1,351 @@
+      <header class="ova-screen__head" data-reveal>
+        <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
+        <h1 class="ova-screen__title">Procedimiento de trabajo seguro: consignación y las cinco reglas de oro</h1>
+      </header>
+
+      <!-- Situación de partida · cuadro de texto del DI previo a 4.1 -->
+      <div data-reveal style="margin-bottom:40px; padding:32px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-acento) 10%, var(--bg-surface)) 0%, var(--bg-surface) 60%); border:1px solid color-mix(in srgb, var(--c-acento) 30%, var(--border-c)); border-radius:var(--r-lg); position:relative; overflow:hidden;">
+        <h3 style="font-family:var(--font-mono); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--c-acento); margin:0 0 16px; display:flex; align-items:center; gap:10px;"><iconify-icon icon="mdi:comment-question-outline" style="font-size:1.1rem;"></iconify-icon> Situación de partida</h3>
+        <p style="margin:0; font-size:1.02rem; line-height:1.6;">Un equipo debe intervenir un poste de distribución para retirar unas conexiones antiguas. El líder de la cuadrilla decide empezar a desconectar los elementos sin haber esperado la confirmación del centro de control, porque “ya se solicitó la desconexión hace rato y no debería tardar”. Antes de seguir, piensa un momento: ¿qué podría pasar si el centro de control todavía no ha completado la maniobra?</p>
+        <p style="margin:18px 0 0; padding-top:18px; border-top:1px solid color-mix(in srgb, var(--c-acento) 25%, var(--border-c)); font-size:1.02rem; line-height:1.6;">Solicitar una desconexión no es lo mismo que tenerla confirmada. Entre el momento en que se solicita y el momento en que el centro de control realmente abre el circuito correspondiente, la instalación sigue energizada, y actuar sobre ella en ese intervalo expone al equipo a un contacto directo con tensión real.</p>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.1 · consignacion ════ -->
+      <section class="ova-seccion" id="consignacion" data-reveal>
+        <h2 class="ova-seccion__titulo">La consignación del circuito: qué es y quién la autoriza</h2>
+        <p class="ova-seccion__lead">La consignación es el procedimiento formal mediante el cual se solicita, se ejecuta y se confirma la desconexión de un circuito antes de que alguien pueda intervenirlo. Es una secuencia de comunicación entre quien solicita el trabajo y el centro de control, y no un simple apagado de interruptor: termina únicamente cuando este último confirma, de forma verificable, que el circuito quedó fuera de servicio.</p>
+      </section>
+
+      <p data-reveal>Este procedimiento debe quedar documentado, con:</p>
+
+      <ul data-reveal style="list-style:none; padding:0; margin:0; display:grid; gap:12px;">
+        <li style="display:flex; gap:14px; align-items:center; padding:16px 20px; background:var(--bg-surface); border:1px solid var(--border-c); border-radius:var(--r-md);">
+          <span style="min-width:36px; height:36px; background:var(--grad-brand); border-radius:10px; display:grid; place-items:center; color:white; flex-shrink:0;"><iconify-icon icon="mdi:clock-start"></iconify-icon></span>
+          <span>La hora de la solicitud.</span>
+        </li>
+        <li style="display:flex; gap:14px; align-items:center; padding:16px 20px; background:var(--bg-surface); border:1px solid var(--border-c); border-radius:var(--r-md);">
+          <span style="min-width:36px; height:36px; background:var(--grad-brand); border-radius:10px; display:grid; place-items:center; color:white; flex-shrink:0;"><iconify-icon icon="mdi:clock-check-outline"></iconify-icon></span>
+          <span>La hora de la confirmación.</span>
+        </li>
+        <li style="display:flex; gap:14px; align-items:center; padding:16px 20px; background:var(--bg-surface); border:1px solid var(--border-c); border-radius:var(--r-md);">
+          <span style="min-width:36px; height:36px; background:var(--grad-brand); border-radius:10px; display:grid; place-items:center; color:white; flex-shrink:0;"><iconify-icon icon="mdi:map-marker-radius-outline"></iconify-icon></span>
+          <span>La identificación clara del circuito o tramo específico que fue desconectado.</span>
+        </li>
+      </ul>
+
+      <!-- Botón: Recuerda -->
+      <div class="ova-callout" style="margin-top:24px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:bell-ring-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Recuerda</span>
+          <p style="margin:8px 0 0;">
+            Un registro impreciso, como "se desconectó la zona norte", sin especificar el
+            circuito exacto, puede llevar a que el equipo trabaje sobre un tramo distinto al que
+            realmente está sin tensión.
+          </p>
+        </div>
+      </div>
+
+      <p data-reveal style="margin-top:32px;">La consignación no termina con la desconexión: incluye también su cierre.</p>
+
+      <!-- Figura del DI (Imagen 09) · cierre de la consignación -->
+      <figure class="ova-figura ova-figura--plana" data-reveal>
+        <img src="assets/img/curso/figura-09-cierre-consignacion.webp" alt="Antes de reconectar un circuito, el centro de control debe recibir la confirmación explícita de que todo el personal se retiró, que los elementos de bloqueo y puesta a tierra fueron removidos, y que la tarea quedó completamente finalizada. Reconectar un circuito sin ese cierre formal expone a cualquier persona que todavía esté trabajando sobre él, aunque la desconexión original haya sido correcta" />
+      </figure>
+
+      <!-- Botón: Importante -->
+      <div class="ova-callout" style="margin-top:24px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:information-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Importante</span>
+          <p style="margin:8px 0 0;">
+            Mientras no exista esa confirmación formal, la instalación debe tratarse como si
+            estuviera energizada, sin importar cuánto tiempo haya pasado desde que se hizo la
+            solicitud. Volviendo al caso de apertura: la cuadrilla no debía iniciar ningún
+            trabajo sobre el poste hasta recibir la confirmación explícita del centro de
+            control, sin importar que la solicitud ya llevara un rato hecha.
+          </p>
+        </div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.2 · cinco-reglas ════ -->
+      <section class="ova-seccion" id="cinco-reglas" data-reveal>
+        <h2 class="ova-seccion__titulo">Las cinco reglas de oro, paso a paso</h2>
+        <p class="ova-seccion__lead">Una vez confirmada la consignación, el trabajo sobre una instalación eléctrica sigue una secuencia técnica de cinco pasos, conocida como las cinco reglas de oro:</p>
+      </section>
+
+      <!-- Stepper (así lo indica el DI) · número del componente, título y descripción literales -->
+      <div class="ova-stepper" data-reveal>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>01</span></div>
+          <div class="ova-step__card"><h3>Primero: desconectar</h3><p>Cortar de forma efectiva todas las fuentes de tensión que alimentan el punto de trabajo.</p></div>
+        </div>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>02</span></div>
+          <div class="ova-step__card"><h3>Segundo: bloquear y señalizar</h3><p>Para evitar una reconexión: usar dispositivos físicos de bloqueo y etiquetas visibles que impidan que alguien reconecte el circuito mientras la tarea está en curso. En redes de distribución, esto se hace retirando físicamente las cañuelas (los cortacircuitos fusibles instalados en el poste), asegurándolas con una guaya en la base del poste y señalizando el punto donde estaban ubicadas, para que nadie las reinstale por error mientras la tarea está en curso.</p></div>
+        </div>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>03</span></div>
+          <div class="ova-step__card"><h3>Tercero: verificar la ausencia de tensión</h3><p>Usar el verificador de tensión, ya probado en una fuente conocida, para confirmar directamente sobre el punto de trabajo que no hay energía presente. Hasta que esta verificación no se complete, el circuito se trata como si estuviera energizado.</p></div>
+        </div>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>04</span></div>
+          <div class="ova-step__card"><h3>Cuarto: poner a tierra y en cortocircuito</h3><p>Conectar el punto de trabajo a tierra, de forma que cualquier tensión que aparezca de manera accidental, por inducción o por una reconexión no prevista, se derive de inmediato sin exponer a la persona. En líneas de distribución, esta puesta a tierra y en cortocircuito se realiza con el gancho de maniobra, conectando el equipo de puesta a tierra portátil a la línea y verificando primero que no exista tensión residual en el transformador asociado.</p></div>
+        </div>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>05</span></div>
+          <div class="ova-step__card"><h3>Quinto: proteger y delimitar la zona de trabajo</h3><p>Establecer de forma visible los límites del área donde se va a intervenir, separándola de cualquier parte de la instalación que continúe energizada.</p></div>
+        </div>
+      </div>
+
+      <!-- Figura del DI (Imagen 05) · autoverificación antes de tocar cualquier conductor -->
+      <figure class="ova-figura ova-figura--plana" data-reveal style="margin-top:32px;">
+        <img src="assets/img/curso/figura-05-autoverificacion.webp" alt="Autoverificación antes de tocar cualquier conductor. Antes de considerar segura una intervención, un trabajador calificado puede hacerse tres preguntas concretas: ¿Tengo la confirmación del centro de control, y no solo la posición de un interruptor? ¿Probé mi verificador de tensión en una fuente conocida antes de usarlo sobre este circuito? ¿Sé exactamente qué tramo fue desconectado, y no solo que algo se desconectó? Si alguna respuesta es no, la tarea todavía no está lista para empezar" />
+      </figure>
+
+      <!-- Botón: Idea clave -->
+      <div class="ova-callout" style="margin-top:24px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:key-variant"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Idea clave</span>
+          <p style="margin:8px 0 0;">
+            Estas cinco reglas se aplican siempre en este orden, y ninguna reemplaza a otra:
+            verificar la ausencia de tensión no sustituye la puesta a tierra, y la puesta a
+            tierra no sustituye el bloqueo previo contra una reconexión. Casi nunca falla el
+            procedimiento completo: falla el atajo. Alguien confía en que la orden de
+            desconexión ya se cumplió, o en que el bloqueo físico basta sin comprobarlo con el
+            instrumento. Las cinco reglas de oro rara vez fallan juntas; fallan una por una,
+            cuando alguien decide que un paso, esta vez, no hace falta.
+          </p>
+        </div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.3 · emergencias ════ -->
+      <section class="ova-seccion" id="emergencias" data-reveal>
+        <h2 class="ova-seccion__titulo">Si algo sale mal: contacto eléctrico y atención de emergencias</h2>
+        <p class="ova-seccion__lead">¿Sabes cómo actuar ante un accidente eléctrico? Te invitamos a ver este video para conocer el protocolo de emergencia y aprender a salvar vidas.</p>
+      </section>
+
+      <!-- Video 3 · Contacto eléctrico -->
+      <div class="ova-video" data-reveal style="margin-bottom:24px;">
+        <div class="ova-video__frame" style="position:relative; padding-top:56.25%; border-radius:var(--r-lg); overflow:hidden; background:#000;">
+          <iframe src="https://www.youtube.com/embed/KriCx3aqQ9k" title="Video 3 · Contacto eléctrico" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute; inset:0; width:100%; height:100%;"></iframe>
+        </div>
+        <p style="margin-top:10px; font-size:.85rem; color:var(--text-mut);"><iconify-icon icon="mdi:youtube" style="color:#FF0000;"></iconify-icon> Video 3 · Contacto eléctrico</p>
+      </div>
+
+      <!-- Síntesis del protocolo de emergencia · párrafo literal en callout danger sin tag (la negrilla es del DI).
+           No va a stepper: el DI lo trae como un solo párrafo, sin títulos de paso. -->
+      <div class="ova-callout ova-callout--danger" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:medical-bag"></iconify-icon></div>
+        <p style="margin:0;"><strong>Síntesis del protocolo de emergencia:</strong> si ocurre un contacto eléctrico, el primer paso es el corte efectivo de la energía que alimenta el punto de contacto. Si el corte inmediato no es viable, la desvinculación de la persona debe hacerse únicamente con una pértiga certificada, nunca por contacto directo. En cuanto la persona quede libre de la fuente de energía, se activa de inmediato el soporte vital básico: reconocer si hay paro cardiorrespiratorio, iniciar RCP y usar el DEA tan pronto esté disponible, mientras se solicita ayuda médica especializada.</p>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.4 · cuando-no ════ -->
+      <section class="ova-seccion" id="cuando-no" data-reveal>
+        <h2 class="ova-seccion__titulo">Cuándo NO se autoriza o se detiene el trabajo</h2>
+        <p class="ova-seccion__lead">Hay condiciones que impiden autorizar o continuar un trabajo con riesgo eléctrico.</p>
+      </section>
+
+      <!-- Acordeón (así lo indica el DI) · cuatro condiciones -->
+      <div class="ova-acordeon" data-reveal>
+        <div class="ova-acordeon__item is-open">
+          <button class="ova-acordeon__head"><span><span class="num">01</span> Primera</span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">La primera es la ausencia de confirmación formal de consignación por parte del centro de control: sin esa confirmación, el trabajo no debe comenzar, sin importar cuánto tiempo haya pasado desde la solicitud.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">02</span> Segunda</span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">La segunda es cualquier duda razonable sobre el estado del equipo de protección o las herramientas certificadas, como un guante sin prueba dieléctrica vigente o un verificador de tensión sin probar.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">03</span> Tercera</span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">La tercera condición es la presencia de humedad significativa, lluvia o superficies mojadas en el punto de trabajo, que aumentan la gravedad de cualquier contacto eléctrico y pueden exigir posponer la tarea hasta que las condiciones mejoren.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">04</span> Cuarta</span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">La cuarta es la falta de un estudio de energía incidente vigente en instalaciones donde ese cálculo es obligatorio, ya que sin él no es posible confirmar que el EPP disponible protege realmente en ese punto.</div></div>
+        </div>
+      </div>
+
+      <p data-reveal style="margin-top:24px;">
+        Ninguna de estas condiciones se resuelve a criterio de quien tiene prisa por terminar
+        la tarea. Detener o negar la autorización de un trabajo por cualquiera de estas razones
+        es exactamente la decisión que el procedimiento espera del supervisor.
+      </p>
+
+      <!-- Botón: Error frecuente + Botón: Criterio de aceptación · en paralelo (diagramador, §4.1) -->
+      <div class="ova-grid-2" data-reveal style="margin-top:8px; gap:16px; align-items:stretch;">
+        <div class="ova-callout ova-callout--danger" style="margin:0;">
+          <div class="ova-callout__ico"><iconify-icon icon="mdi:close-octagon"></iconify-icon></div>
+          <div>
+            <span class="ova-callout__tag">Error frecuente</span>
+            <p style="margin:8px 0 0;">
+              Iniciar el trabajo sobre una instalación eléctrica apenas se solicita la
+              desconexión, sin esperar la confirmación formal del centro de control de que el
+              circuito quedó fuera de servicio.
+            </p>
+          </div>
+        </div>
+        <div class="ova-callout ova-callout--success" style="margin:0;">
+          <div class="ova-callout__ico"><iconify-icon icon="mdi:check-all"></iconify-icon></div>
+          <div>
+            <span class="ova-callout__tag">Criterio de aceptación</span>
+            <p style="margin:8px 0 0;">
+              Existe confirmación registrada de la consignación del circuito, y las cinco reglas
+              de oro se aplicaron completas y en orden antes de iniciar cualquier intervención
+              sobre la instalación.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin:48px 0 16px;" data-reveal><strong>Tabla de referencia rápida: las cinco reglas de oro</strong></h3>
+
+      <!-- Tabla · Regla / Qué se hace / Con qué -->
+      <div class="ova-tabla" data-reveal>
+        <table>
+          <thead>
+            <tr>
+              <th>Regla</th>
+              <th class="is-highlight">Qué se hace</th>
+              <th>Con qué</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1. Desconectar.</td>
+              <td>Cortar de forma efectiva todas las fuentes de tensión del punto de trabajo.</td>
+              <td>Interruptor o dispositivo de corte correspondiente.</td>
+            </tr>
+            <tr>
+              <td>2. Bloquear y señalizar.</td>
+              <td>Impedir físicamente una reconexión accidental durante la tarea.</td>
+              <td>Dispositivos de bloqueo, etiquetas, cañuelas retiradas y aseguradas con guaya en redes de distribución.</td>
+            </tr>
+            <tr>
+              <td>3. Verificar ausencia de tensión.</td>
+              <td>Confirmar directamente sobre el punto de trabajo que no hay energía.</td>
+              <td>Verificador de tensión, probado antes en fuente conocida.</td>
+            </tr>
+            <tr>
+              <td>4. Poner a tierra y en cortocircuito.</td>
+              <td>Derivar a tierra cualquier tensión que aparezca de forma accidental.</td>
+              <td>Equipo de puesta a tierra portátil, conectado con el gancho de maniobra.</td>
+            </tr>
+            <tr>
+              <td>5. Delimitar y señalizar la zona.</td>
+              <td>Separar visiblemente el área de trabajo del resto de la instalación.</td>
+              <td>Conos, cintas, señalización visible.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Comparativo · Ejemplo contextualizado / Contraejemplo -->
+      <h3 style="margin:48px 0 16px; display:flex; align-items:center; gap:10px;" data-reveal>
+        <iconify-icon icon="mdi:scale-balance" style="color:var(--c-acento); font-size:1.6rem;"></iconify-icon>
+        Comparativo
+      </h3>
+
+      <div class="ova-vs" data-reveal>
+        <div class="ova-vs__card">
+          <span class="ova-vs__card-tag" style="background:color-mix(in srgb, var(--success) 14%, transparent); color:var(--success);">✓ Ejemplo contextualizado</span>
+          <h3>Ejemplo contextualizado</h3>
+          <p>
+            El equipo de trabajo que espera la confirmación explícita del centro de control
+            antes de tocar cualquier elemento, y aplica las cinco reglas de oro completas y en
+            orden, aunque la tarea parezca sencilla.
+          </p>
+        </div>
+        <div class="ova-vs__divider">VS</div>
+        <div class="ova-vs__card ova-vs__card--alt">
+          <span class="ova-vs__card-tag" style="background:color-mix(in srgb, var(--danger) 14%, transparent); color:var(--danger);">✗ Contraejemplo</span>
+          <h3>Contraejemplo</h3>
+          <p>
+            El equipo de trabajo que empieza a desconectar elementos físicos del circuito
+            asumiendo que la desconexión solicitada ya debe estar hecha, sin esperar la
+            confirmación del centro de control.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mirada experta · cuadro de texto del DI (mismo tratamiento que Situación de partida) -->
+      <div data-reveal style="margin-top:32px; padding:32px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-info) 10%, var(--bg-surface)) 0%, var(--bg-surface) 60%); border:1px solid color-mix(in srgb, var(--c-info) 30%, var(--border-c)); border-radius:var(--r-lg); position:relative; overflow:hidden;">
+        <h3 style="font-family:var(--font-mono); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--c-info); margin:0 0 16px; display:flex; align-items:center; gap:10px;"><iconify-icon icon="mdi:account-search-outline" style="font-size:1.1rem;"></iconify-icon> Mirada experta</h3>
+        <p style="margin:0; font-size:1.02rem; line-height:1.6;">Un supervisor experimentado no autoriza una intervención solo porque el equipo tiene el EPP puesto y las herramientas a la mano; hace una pregunta directa: "¿ya tenemos la confirmación del centro de control, y verificamos la ausencia de tensión con el instrumento?". Si la respuesta no es clara, no autoriza la tarea, aunque el resto de la preparación esté completa.</p>
+        <p style="margin:14px 0 0; font-size:1.02rem; line-height:1.6;">Ejemplo de cómo piensa un experto: antes de autorizar el retiro de unas conexiones en un poste alejado, no se conforma con que el registro diga "circuito desconectado"; confirma con el centro de control el tramo exacto que fue desenergizado, porque sabe que una identificación imprecisa del circuito puede dejar energizado justo el segmento donde va a trabajar el equipo.</p>
+      </div>
+
+      <!-- Botón: Importante -->
+      <div class="ova-callout" style="margin-top:14px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:information-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Importante</span>
+          <p style="margin:8px 0 0;">
+            Las cinco reglas de oro se aplican siempre completas y en orden. Verificar la
+            ausencia de tensión no reemplaza el bloqueo contra reconexión, y la puesta a tierra
+            no reemplaza la verificación con instrumento.
+          </p>
+        </div>
+      </div>
+
+      <!-- Comparativo · Buena práctica / Mala práctica -->
+      <h3 style="margin:48px 0 16px; display:flex; align-items:center; gap:10px;" data-reveal>
+        <iconify-icon icon="mdi:scale-balance" style="color:var(--c-acento); font-size:1.6rem;"></iconify-icon>
+        Comparativo
+      </h3>
+
+      <div data-reveal style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:16px;">
+        <div style="position:relative; padding:28px; background:linear-gradient(135deg, color-mix(in srgb, var(--success) 8%, var(--bg-surface)) 0%, var(--bg-surface) 100%); border:1px solid color-mix(in srgb, var(--success) 35%, var(--border-c)); border-radius:var(--r-md);">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+            <div style="width:36px; height:36px; border-radius:10px; background:var(--success); color:white; display:grid; place-items:center;">
+              <iconify-icon icon="mdi:check-bold" style="font-size:1.2rem;"></iconify-icon>
+            </div>
+            <h3 style="margin:0; font-size:1.2rem; color:var(--success);">Buena práctica</h3>
+          </div>
+          <p style="margin:0;">
+            Confirmar verbalmente con el centro de control el tramo exacto que fue
+            desconectado, y registrar esa confirmación antes de iniciar cualquier trabajo sobre
+            la instalación.
+          </p>
+        </div>
+        <div style="position:relative; padding:28px; background:linear-gradient(135deg, color-mix(in srgb, var(--danger) 8%, var(--bg-surface)) 0%, var(--bg-surface) 100%); border:1px solid color-mix(in srgb, var(--danger) 30%, var(--border-c)); border-radius:var(--r-md);">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+            <div style="width:36px; height:36px; border-radius:10px; background:var(--danger); color:white; display:grid; place-items:center;">
+              <iconify-icon icon="mdi:close-thick" style="font-size:1.2rem;"></iconify-icon>
+            </div>
+            <h3 style="margin:0; font-size:1.2rem; color:var(--danger);">Mala práctica</h3>
+          </div>
+          <p style="margin:0;">
+            Comenzar a desconectar elementos físicos de un circuito asumiendo que la solicitud
+            de desconexión ya fue atendida, sin esperar la confirmación explícita del centro de
+            control.
+          </p>
+        </div>
+      </div>
+
+      <!-- Botón: Ponte a prueba -->
+      <div class="ova-callout ova-callout--success" style="margin-top:24px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:pencil-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Ponte a prueba</span>
+          <p style="margin:8px 0 0;">
+            Piensa, para el caso del poste de distribución, qué debería haber esperado el líder
+            de la cuadrilla antes de empezar a desconectar elementos, y qué regla de oro
+            aplicaría primero una vez confirmada la consignación. No necesitas escribir ni
+            entregar tu respuesta: esta reflexión te prepara para aplicarlo en la inmersión.
+          </p>
+        </div>
+      </div>
+
+      <!-- Pódcast (así lo indica el DI) · es el cuarto video de insumos/Videos.txt: en YouTube su título
+           dice "Síntesis curso…", igual que el pódcast de TSA (INSTITUCION.md §6) -->
+      <h3 style="margin:48px 0 16px;" data-reveal>Pódcast</h3>
+      <p data-reveal>Te invitamos a escuchar el siguiente pódcast, que refuerza los aprendizajes clave del curso.</p>
+
+      <div class="ova-video" data-reveal style="margin-top:16px;">
+        <div class="ova-video__frame" style="position:relative; padding-top:56.25%; border-radius:var(--r-lg); overflow:hidden; background:#000;">
+          <iframe src="https://www.youtube.com/embed/jgVeqGNhjZA" title="Pódcast del curso Trabajo Seguro en Riesgo Eléctrico" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute; inset:0; width:100%; height:100%;"></iframe>
+        </div>
+        <p style="margin-top:10px; font-size:.85rem; color:var(--text-mut);"><iconify-icon icon="mdi:youtube" style="color:#FF0000;"></iconify-icon> Pódcast del curso Trabajo Seguro en Riesgo Eléctrico</p>
+      </div>

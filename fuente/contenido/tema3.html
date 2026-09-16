@@ -1,0 +1,330 @@
+      <header class="ova-screen__head" data-reveal>
+        <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
+        <h1 class="ova-screen__title">Elementos de protección y herramientas para riesgo eléctrico</h1>
+      </header>
+
+      <!-- Situación de partida · cuadro de texto del DI previo a 3.1 -->
+      <div data-reveal style="margin-bottom:40px; padding:32px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-acento) 10%, var(--bg-surface)) 0%, var(--bg-surface) 60%); border:1px solid color-mix(in srgb, var(--c-acento) 30%, var(--border-c)); border-radius:var(--r-lg); position:relative; overflow:hidden;">
+        <h3 style="font-family:var(--font-mono); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--c-acento); margin:0 0 16px; display:flex; align-items:center; gap:10px;"><iconify-icon icon="mdi:comment-question-outline" style="font-size:1.1rem;"></iconify-icon> Situación de partida</h3>
+        <p style="margin:0; font-size:1.02rem; line-height:1.6;">Un trabajador se dispone a realizar una maniobra sobre una línea de baja tensión. Toma unos guantes dieléctricos del almacén, se los coloca y comienza la tarea sin revisar la fecha de la última prueba dieléctrica, ni verificar si tienen algún corte o perforación.</p>
+        <p style="margin:14px 0 0; font-size:1.02rem; line-height:1.6;">Antes de seguir, piensa por un momento: ¿por qué unos guantes dieléctricos podrían no proteger, si son el elemento diseñado justamente para eso?</p>
+        <p style="margin:18px 0 0; padding-top:18px; border-top:1px solid color-mix(in srgb, var(--c-acento) 25%, var(--border-c)); font-size:1.02rem; line-height:1.6;">Un guante dieléctrico pierde su capacidad de aislamiento si tiene un corte, una perforación diminuta o si venció su periodo de prueba, y esos defectos no siempre son visibles a simple vista. Usar un guante dañado da una sensación de protección que, en la práctica, puede no existir.</p>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.1 · guantes-ropa ════ -->
+      <section class="ova-seccion" id="guantes-ropa" data-reveal>
+        <h2 class="ova-seccion__titulo">Guantes dieléctricos y ropa de protección: para qué sirven y cuándo se usan</h2>
+        <p class="ova-seccion__lead">Los guantes dieléctricos son el elemento de protección más asociado al trabajo eléctrico, y están fabricados y certificados, según el nivel de tensión en el que se van a usar. Un guante certificado para baja tensión no ofrece la misma protección en una instalación de media o alta tensión: el nivel de aislamiento debe corresponder exactamente al nivel de tensión de la tarea, no a una idea general de "guante de trabajo eléctrico".</p>
+      </section>
+
+      <h3 style="margin:32px 0 16px;" data-reveal>Clases de guantes dieléctricos, según la norma ASTM D120</h3>
+
+      <!-- Tabla · Clase / Tensión máxima de uso -->
+      <div class="ova-tabla" data-reveal>
+        <table>
+          <thead>
+            <tr>
+              <th>Clase (ASTM D120)</th>
+              <th class="is-highlight">Tensión máxima de uso (CA)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Clase 00</td><td>500 V</td></tr>
+            <tr><td>Clase 0</td><td>1.000 V</td></tr>
+            <tr><td>Clase 1</td><td>7.500 V</td></tr>
+            <tr><td>Clase 2</td><td>17.000 V</td></tr>
+            <tr><td>Clase 3</td><td>26.500 V</td></tr>
+            <tr><td>Clase 4</td><td>36.000 V</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- El DI dice "Carrusel"; con 3 ítems el catálogo (§3 Carrusel · NO si son 3 o menos) pide grid -->
+      <div data-reveal style="margin-top:32px; display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px;">
+        <div style="padding:28px; background:var(--bg-surface); border:1px solid var(--border-c); border-radius:var(--r-md);">
+          <div style="width:44px; height:44px; border-radius:12px; background:color-mix(in srgb, var(--c-acento) 14%, transparent); color:var(--c-acento); display:grid; place-items:center; margin-bottom:14px;"><iconify-icon icon="mdi:hand-back-left-outline" style="font-size:1.5rem;"></iconify-icon></div>
+          <h4 style="margin:0 0 10px; font-size:1.05rem;">Guantes dieléctricos</h4>
+          <p style="margin:0; color:var(--text-mut); font-size:.95rem;">La clase del guante debe ser igual o superior a la tensión real de la instalación, nunca calculada por aproximación: un guante clase 0 (hasta 1.000 V) no ofrece ninguna protección confiable en un tablero de 13,2 kV, aunque el material se vea idéntico al de un guante de clase superior.</p>
+        </div>
+        <div style="padding:28px; background:var(--bg-surface); border:1px solid var(--border-c); border-radius:var(--r-md);">
+          <div style="width:44px; height:44px; border-radius:12px; background:color-mix(in srgb, var(--c-acento) 14%, transparent); color:var(--c-acento); display:grid; place-items:center; margin-bottom:14px;"><iconify-icon icon="mdi:tshirt-crew-outline" style="font-size:1.5rem;"></iconify-icon></div>
+          <h4 style="margin:0 0 10px; font-size:1.05rem;">Ropa de protección</h4>
+          <p style="margin:0; color:var(--text-mut); font-size:.95rem;">La ropa de protección contra arco eléctrico es otro elemento clave cuando la categoría de riesgo de arco lo exige. Está fabricada con materiales resistentes a la llama y clasificada, según la energía incidente que puede soportar sin transferir calor peligroso a la piel. Usar ropa común, aunque parezca resistente, no ofrece esta protección específica frente a un arco eléctrico.</p>
+        </div>
+        <div style="padding:28px; background:var(--bg-surface); border:1px solid var(--border-c); border-radius:var(--r-md);">
+          <div style="width:44px; height:44px; border-radius:12px; background:color-mix(in srgb, var(--c-acento) 14%, transparent); color:var(--c-acento); display:grid; place-items:center; margin-bottom:14px;"><iconify-icon icon="mdi:hard-hat" style="font-size:1.5rem;"></iconify-icon></div>
+          <h4 style="margin:0 0 10px; font-size:1.05rem;">Casco, protección facial, gafas y calzado</h4>
+          <p style="margin:0; color:var(--text-mut); font-size:.95rem;">A estos se suman el casco con protección facial, las gafas de seguridad y el calzado dieléctrico, cada uno cubriendo un peligro específico: impacto y descarga a través de la cabeza, proyección de partículas durante un arco, y contacto a través del punto de apoyo en el piso.</p>
+        </div>
+      </div>
+
+      <!-- Botón: Importante -->
+      <div class="ova-callout" style="margin-top:24px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:information-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Importante</span>
+          <p style="margin:8px 0 0;">Ningún elemento sustituye a otro; la tarea concreta determina cuáles se necesitan al mismo tiempo.</p>
+        </div>
+      </div>
+
+      <h3 style="margin:32px 0 12px;" data-reveal><strong>Categorías de EPP contra arco eléctrico según NFPA 70E</strong></h3>
+      <p data-reveal>
+        Esta es la escala técnica que respalda las categorías baja, media y alta mencionadas
+        antes: la energía incidente calculada, expresada en calorías por centímetro cuadrado
+        (cal/cm²), determina cuál de estas cuatro categorías de EPP corresponde.
+      </p>
+
+      <!-- Tabla · Categoría de EPP / Energía incidente mínima -->
+      <div class="ova-tabla" data-reveal>
+        <table>
+          <thead>
+            <tr>
+              <th>Categoría de EPP (NFPA 70E)</th>
+              <th class="is-highlight">Energía incidente mínima requerida</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Categoría 1</td><td>4 cal/cm²</td></tr>
+            <tr><td>Categoría 2</td><td>8 cal/cm²</td></tr>
+            <tr><td>Categoría 3</td><td>25 cal/cm²</td></tr>
+            <tr><td>Categoría 4</td><td>40 cal/cm²</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p data-reveal style="margin-top:24px;">
+        Por debajo de 1,2 cal/cm² la norma no exige ropa resistente al arco, aunque sí se
+        recomienda evitar fibras sintéticas que puedan derretirse; por encima de 40 cal/cm² el
+        trabajo energizado se considera prohibido, sin importar el EPP disponible.
+      </p>
+
+      <!-- Figura del DI (Imagen 06) · categorías de riesgo de arco eléctrico -->
+      <figure class="ova-figura ova-figura--plana" data-reveal>
+        <img src="assets/img/curso/figura-06-categorias-riesgo-arco.webp" alt="Categorías de riesgo de arco eléctrico. Baja: la energía incidente calculada es reducida para ese punto específico; exige EPP básico de protección contra arco, según el estudio vigente. Media: la energía incidente calculada representa un riesgo moderado de quemadura; exige EPP de mayor nivel de protección térmica y procedimiento reforzado. Alta: la energía incidente calculada representa un riesgo severo de lesión grave; exige EPP de máxima protección disponible y minimizar el tiempo de exposición" />
+      </figure>
+
+      <!-- ════ Sección {{NUM}}.2 · herramientas ════ -->
+      <section class="ova-seccion" id="herramientas" data-reveal>
+        <h2 class="ova-seccion__titulo">Herramientas certificadas para maniobras con riesgo eléctrico</h2>
+        <p class="ova-seccion__lead">Las maniobras con riesgo eléctrico requieren herramientas diseñadas y certificadas específicamente para ese fin, no herramientas de uso general, adaptadas a la tarea. Estas herramientas son:</p>
+      </section>
+
+      <!-- Acordeón (así lo indica el DI) · cuatro herramientas -->
+      <div class="ova-acordeon" data-reveal>
+        <div class="ova-acordeon__item is-open">
+          <button class="ova-acordeon__head"><span><span class="num">01</span> Pértiga</span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">La pértiga es una herramienta aislada y telescópica que permite operar interruptores o realizar maniobras a distancia, manteniendo a la persona fuera del alcance de contacto directo. La pértiga se fabrica en fibra de vidrio reforzada con resina, certificada bajo la norma ASTM F711, que exige una prueba dieléctrica anual; una pértiga que no pase esa prueba, por daño en el barniz protector o exposición prolongada a la humedad, debe retirarse de servicio de inmediato, aunque se vea intacta a simple vista.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">02</span> Gancho de maniobra</span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">El gancho de maniobra cumple una función similar para operaciones específicas sobre líneas o equipos energizados.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">03</span> Verificador de ausencia de tensión</span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">El verificador de ausencia de tensión, conocido también como tester, es el instrumento que confirma si un conductor está o no energizado antes de tocarlo. Su función es tan crítica como su verificación: debe probarse en una fuente conocida antes y después de usarlo sobre el circuito de trabajo, para confirmar que el instrumento funciona correctamente y no está dando una lectura falsa.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">04</span> Equipo de puesta a tierra</span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">El equipo de puesta a tierra portátil es el elemento que conecta el circuito desenergizado a tierra durante la intervención, para que cualquier tensión que aparezca de forma accidental se derive de inmediato sin exponer a la persona.</div></div>
+        </div>
+      </div>
+
+      <p data-reveal style="margin-top:24px;">
+        Estas cuatro herramientas, pértiga, gancho de maniobra, verificador de tensión y equipo
+        de puesta a tierra, forman el conjunto básico de cualquier intervención sobre una
+        instalación eléctrica de mayor complejidad.
+      </p>
+
+      <!-- Botón: Dato curioso -->
+      <div class="ova-callout" style="margin-top:8px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:head-question-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Dato curioso</span>
+          <p style="margin:8px 0 0;">
+            Un guante dieléctrico puede fallar por un agujero tan pequeño como el que deja un
+            alfiler, invisible a simple vista. Por eso, antes de confiar en un guante, se le
+            hace la prueba más sencilla y menos intuitiva de todas: se infla como un globo y se
+            escucha si silba, tal como lo exige la norma ASTM F496 para el cuidado en servicio
+            de guantes aislantes.
+          </p>
+        </div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.3 · revisar-equipo ════ -->
+      <section class="ova-seccion" id="revisar-equipo" data-reveal>
+        <h2 class="ova-seccion__titulo">Cómo revisar el equipo antes de usarlo</h2>
+        <p class="ova-seccion__lead">Te invitamos a ver el siguiente video, que presenta cómo hacer los cuatro chequeos de los guantes dieléctricos y el verificador de tensión antes de cada intervención.</p>
+      </section>
+
+      <!-- Video 2 · Verificación de elementos de protección y controles de riesgo -->
+      <div class="ova-video" data-reveal>
+        <div class="ova-video__frame" style="position:relative; padding-top:56.25%; border-radius:var(--r-lg); overflow:hidden; background:#000;">
+          <iframe src="https://www.youtube.com/embed/ZGkq2sW6BXE" title="Video 2 · Verificación de elementos de protección y controles de riesgo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute; inset:0; width:100%; height:100%;"></iframe>
+        </div>
+        <p style="margin-top:10px; font-size:.85rem; color:var(--text-mut);"><iconify-icon icon="mdi:youtube" style="color:#FF0000;"></iconify-icon> Video 2 · Verificación de elementos de protección y controles de riesgo</p>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.4 · delimitar-zona ════ -->
+      <section class="ova-seccion" id="delimitar-zona" data-reveal>
+        <h2 class="ova-seccion__titulo">Delimitar y señalizar la zona de trabajo antes de empezar</h2>
+      </section>
+
+      <!-- Botón: Recuerda -->
+      <div class="ova-callout" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:bell-ring-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Recuerda</span>
+          <p style="margin:8px 0 0;">
+            Antes de iniciar cualquier tarea con riesgo eléctrico, debe delimitarse y
+            señalizarse la zona alrededor del punto de trabajo, respetando las distancias
+            mínimas de aproximación según el nivel de tensión que viste en el Tema 1.
+          </p>
+        </div>
+      </div>
+
+      <p data-reveal style="margin-top:24px;">
+        Esta delimitación no es solo para quien ejecuta la tarea: impide que otras personas
+        transiten cerca de una instalación energizada o de un punto donde se está trabajando.
+      </p>
+
+      <p data-reveal>
+        En tareas al aire libre, como intervenciones sobre postes o redes de distribución, la
+        delimitación incluye revisar y señalizar los peligros del entorno inmediato, como basura
+        acumulada, ramas de árboles cercanas a las líneas, o cualquier objeto que pudiera
+        generar un camino conductor inesperado hacia la zona de trabajo.
+      </p>
+
+      <!-- Botón: Importante -->
+      <div class="ova-callout" style="margin-top:8px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:information-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Importante</span>
+          <p style="margin:8px 0 0;">
+            La delimitación general del área es diferente de las cinco reglas de oro que vas a
+            ver en el Tema 4, aunque están relacionadas: la delimitación del entorno se hace al
+            inicio de la tarea, para proteger a terceros y al propio equipo mientras se prepara
+            la intervención, mientras que la señalización de la zona sin tensión, como quinta
+            regla de oro, se aplica específicamente sobre el punto exacto donde se va a
+            trabajar, una vez completadas las otras cuatro reglas.
+          </p>
+        </div>
+      </div>
+
+      <!-- El DI dice "Acordeón" con dos ítems (Error frecuente / Criterio de aceptación); con 2 el catálogo pide
+           dos columnas: los dos callouts en paralelo, como el par del tema 4 -->
+      <div class="ova-grid-2" data-reveal style="margin-top:32px; gap:16px; align-items:stretch;">
+        <div class="ova-callout ova-callout--danger" style="margin:0;">
+          <div class="ova-callout__ico"><iconify-icon icon="mdi:close-octagon"></iconify-icon></div>
+          <div>
+            <span class="ova-callout__tag">Error frecuente</span>
+            <p style="margin:8px 0 0;">Usar guantes dieléctricos sin verificar la fecha de su última prueba dieléctrica ni realizar la prueba de inflado con aire antes de cada uso, confiando únicamente en que el guante se ve en buen estado.</p>
+          </div>
+        </div>
+        <div class="ova-callout ova-callout--success" style="margin:0;">
+          <div class="ova-callout__ico"><iconify-icon icon="mdi:check-all"></iconify-icon></div>
+          <div>
+            <span class="ova-callout__tag">Criterio de aceptación</span>
+            <p style="margin:8px 0 0;">El equipo de protección y las herramientas certificadas corresponden al nivel de tensión y a la categoría de riesgo de arco de la tarea, pasaron su verificación antes del uso, y la zona de trabajo está delimitada y señalizada antes de iniciar.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mirada experta · cuadro de texto del DI (mismo tratamiento que Situación de partida) -->
+      <div data-reveal style="margin-top:32px; padding:32px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-info) 10%, var(--bg-surface)) 0%, var(--bg-surface) 60%); border:1px solid color-mix(in srgb, var(--c-info) 30%, var(--border-c)); border-radius:var(--r-lg); position:relative; overflow:hidden;">
+        <h3 style="font-family:var(--font-mono); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--c-info); margin:0 0 16px; display:flex; align-items:center; gap:10px;"><iconify-icon icon="mdi:account-search-outline" style="font-size:1.1rem;"></iconify-icon> Mirada experta</h3>
+        <p style="margin:0; font-size:1.02rem; line-height:1.6;">El trabajador calificado no se conforma con mirar que los guantes dieléctricos no tengan roturas visibles: revisa la fecha de la última prueba certificada, realiza la prueba de inflado con aire frente al trabajador, y pregunta si el verificador de tensión fue probado en una fuente conocida antes de esa jornada. Si tiene cualquier duda razonable, prefiere retirar el equipo de servicio, aunque eso implique detener la tarea.</p>
+        <p style="margin:14px 0 0; font-size:1.02rem; line-height:1.6;">Ejemplo de cómo piensa un experto: al revisar un verificador de tensión antes de una maniobra, no solo confirma que enciende; lo prueba primero en una toma conocida para confirmar que detecta tensión real, y solo después lo usa sobre el circuito de trabajo, porque sabe que un verificador con la batería baja puede parecer funcional sin detectar tensión de forma confiable.</p>
+      </div>
+
+      <!-- Figura del DI (Imagen 08) · elementos y herramientas para trabajo con riesgo eléctrico -->
+      <figure class="ova-figura ova-figura--plana" data-reveal style="margin-top:32px;">
+        <img src="assets/img/curso/figura-08-elementos-y-herramientas.webp" alt="Elementos y herramientas para trabajo con riesgo eléctrico. Guantes dieléctricos: aislar la mano del contacto con un conductor energizado; en toda maniobra sobre un circuito que pueda estar bajo tensión. Ropa antiarco: reducir la transferencia de calor de un arco eléctrico hacia la piel; según la categoría de riesgo de arco calculada para el punto de trabajo. Verificador de ausencia de tensión: confirmar directamente sobre el punto de trabajo, con el instrumento ya probado, que no hay energía presente, tercer paso de las cinco reglas de oro; antes de iniciar cualquier intervención, tras la desconexión. Equipo portátil de puesta a tierra: derivar a tierra cualquier tensión que aparezca de forma accidental; durante toda la intervención sobre el circuito desenergizado" />
+      </figure>
+
+      <!-- Comparativo · Ejemplo contextualizado / Contraejemplo -->
+      <h3 style="margin:48px 0 16px; display:flex; align-items:center; gap:10px;" data-reveal>
+        <iconify-icon icon="mdi:scale-balance" style="color:var(--c-acento); font-size:1.6rem;"></iconify-icon>
+        Comparativo
+      </h3>
+
+      <div class="ova-vs" data-reveal>
+        <div class="ova-vs__card">
+          <span class="ova-vs__card-tag" style="background:color-mix(in srgb, var(--success) 14%, transparent); color:var(--success);">✓ Ejemplo contextualizado</span>
+          <h3>Ejemplo contextualizado</h3>
+          <p>
+            Trabajador que revisa la fecha de prueba de sus guantes dieléctricos, realiza la
+            prueba de inflado con aire, y verifica el funcionamiento del tester en una fuente
+            conocida antes de cada intervención.
+          </p>
+        </div>
+        <div class="ova-vs__divider">VS</div>
+        <div class="ova-vs__card ova-vs__card--alt">
+          <span class="ova-vs__card-tag" style="background:color-mix(in srgb, var(--danger) 14%, transparent); color:var(--danger);">✗ Contraejemplo</span>
+          <h3>Contraejemplo</h3>
+          <p>
+            Trabajador que toma los guantes dieléctricos del almacén sin revisar su fecha de
+            prueba ni realizar ninguna verificación, confiando en que se ven en buen estado.
+          </p>
+        </div>
+      </div>
+
+      <!-- Botón: Importante · remate del comparativo, eyebrow sin caja (diagramador, §4.1) -->
+      <div data-reveal style="margin:32px 0 12px; display:flex; align-items:center; gap:18px;">
+        <span style="width:48px; height:1px; background:var(--c-acento);"></span>
+        <span style="font-family:var(--font-mono); font-size:.78rem; letter-spacing:.18em; color:var(--c-acento); text-transform:uppercase;">Importante</span>
+        <span style="flex:1; height:1px; background:var(--border-c);"></span>
+      </div>
+      <p data-reveal>
+        Ningún elemento de protección se usa sin verificación previa. Un guante o un
+        verificador de tensión que no ha sido inspeccionado o comprobado cuando corresponde
+        puede generar una falsa sensación de seguridad.
+      </p>
+
+      <!-- Comparativo · Buena práctica / Mala práctica -->
+      <h3 style="margin:48px 0 16px; display:flex; align-items:center; gap:10px;" data-reveal>
+        <iconify-icon icon="mdi:scale-balance" style="color:var(--c-acento); font-size:1.6rem;"></iconify-icon>
+        Comparativo
+      </h3>
+
+      <div data-reveal style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:16px;">
+        <div style="position:relative; padding:28px; background:linear-gradient(135deg, color-mix(in srgb, var(--success) 8%, var(--bg-surface)) 0%, var(--bg-surface) 100%); border:1px solid color-mix(in srgb, var(--success) 35%, var(--border-c)); border-radius:var(--r-md);">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+            <div style="width:36px; height:36px; border-radius:10px; background:var(--success); color:white; display:grid; place-items:center;">
+              <iconify-icon icon="mdi:check-bold" style="font-size:1.2rem;"></iconify-icon>
+            </div>
+            <h3 style="margin:0; font-size:1.2rem; color:var(--success);">Buena práctica</h3>
+          </div>
+          <p style="margin:0;">
+            Inspeccionar los guantes antes de cada uso y realizar la prueba de inflado con aire
+            cuando corresponda al procedimiento aplicable; además, comprobar el verificador de
+            tensión en una fuente conocida antes de utilizarlo.
+          </p>
+        </div>
+        <div style="position:relative; padding:28px; background:linear-gradient(135deg, color-mix(in srgb, var(--danger) 8%, var(--bg-surface)) 0%, var(--bg-surface) 100%); border:1px solid color-mix(in srgb, var(--danger) 30%, var(--border-c)); border-radius:var(--r-md);">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+            <div style="width:36px; height:36px; border-radius:10px; background:var(--danger); color:white; display:grid; place-items:center;">
+              <iconify-icon icon="mdi:close-thick" style="font-size:1.2rem;"></iconify-icon>
+            </div>
+            <h3 style="margin:0; font-size:1.2rem; color:var(--danger);">Mala práctica</h3>
+          </div>
+          <p style="margin:0;">
+            Delimitar la zona de trabajo solo cuando la tarea se considera de alta complejidad,
+            y omitir esta delimitación en intervenciones que el equipo juzga rutinarias o de
+            baja tensión.
+          </p>
+        </div>
+      </div>
+
+      <!-- Botón: Ponte a prueba -->
+      <div class="ova-callout ova-callout--success" style="margin-top:24px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:pencil-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Ponte a prueba</span>
+          <p style="margin:8px 0 0;">
+            Piensa, para el caso de los guantes dieléctricos sin revisar, qué dos verificaciones
+            faltaron antes de que el trabajador pudiera confiar en su protección. No necesitas
+            escribir ni entregar tu respuesta: esta reflexión te prepara para aplicarlas en la
+            inmersión.
+          </p>
+        </div>
+      </div>

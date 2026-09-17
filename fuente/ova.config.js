@@ -15,7 +15,7 @@ module.exports = {
   course: {
     code: '', name: 'Trabajo Seguro en Riesgo Eléctrico', subtitle: '', duration: '4 horas',
     iso: 'ISO 9001:2015', licencia: 'Creative Commons BY-NC-SA 4.0',
-    preset: 'waygroup', pdf: '',   // PENDIENTE: cartilla PDF no recibida (ver insumos/MAPA-FIGURAS.md)
+    preset: 'waygroup', pdf: 'assets/downloads/Curso_Riesgo_Electrico.pdf',   // insumos/Cartilla/, sin tilde en el nombre
     portadaFullBleed: true,        // el estándar Waygroup desde TSA
   },
   /* MENÚ · estándar Waygroup: Portada, Presentación, temas numerados (1, 2…) con
